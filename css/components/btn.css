@@ -1,0 +1,30 @@
+.btn {
+  background: #FFD517;
+  color: #000;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 18px 35px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  /* &:--theme--yellow {
+      background: #FFD517;
+      color: black;
+  } */
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+}
+.btn:hover {
+  background: #ffd517;
+}
+.btn:--theme--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+}
