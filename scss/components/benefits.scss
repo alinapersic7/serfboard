@@ -1,0 +1,51 @@
+.benefits {
+    display: flex;
+    @include phones {
+        flex-direction: column;
+
+    }
+
+}
+.benefits__item {
+    flex: 1;
+    margin: 0 3%;
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(19px);
+    }
+    &:before {
+        content: url("../../img/Combinedshape.png");
+        position: absolute;
+        top: rem(30px);
+        right: 0;
+        transform: translate(50%);
+        @include phones {
+            display: none;
+        }
+        
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+.benefit {
+    text-align: center;
+    @include phones {
+        display: flex;
+        text-align: left;
+    }
+}
+.benefit__image {
+    margin-bottom: rem(19px);
+    @include phones {
+        margin-bottom: 0;
+        margin-right: rem(20px);
+    }
+}
